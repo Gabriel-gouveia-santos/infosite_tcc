@@ -1,1 +1,2 @@
 Token: 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
+cor principal: #2A66DA
