@@ -135,7 +135,7 @@ nav a:hover {
 
 /* Estilo para o banner */
 .banner {
-    padding: 90px 0px 140px 140px; /* Aumentando o padding para aumentar o espaço ao redor do banner */
+    padding: 70px 0px 140px 140px; /* Aumentando o padding para aumentar o espaço ao redor do banner */
     text-align: left;
     display: flex; /* Adicionando display flex para alinhar a imagem e o conteúdo lado a lado */
     align-items: center; /* Alinhando verticalmente */
@@ -148,8 +148,16 @@ nav a:hover {
 
 /* Estilo para a imagem */
 .banner img {
-    max-width: 300px; /* Definindo a largura máxima da imagem */
-    margin-left: 40px; /* Adicionando margem à esquerda para separar a imagem do texto */
+    max-width: 370px; /* Definindo a largura máxima da imagem */
+}
+
+/* Estilo para a imagem do banner */
+.img-banner {
+    margin: 0 90px; /* Ajustando a margem esquerda para mover a imagem mais para a esquerda */
+}
+
+.banner-content {
+    padding-bottom: 10%;
 }
 
 /* Estilo para o título */
@@ -192,15 +200,47 @@ nav a:hover {
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
-/* Mudança de cor do botão ao passar o mouse 
-.banner button:hover {
-    background-color: #2A66DA;
-}*/
+
+.banner-2 {
+    padding: 0px 0px 0px 140px; /* Aumentando o padding para aumentar o espaço ao redor do banner */
+    text-align: left;
+    display: flex; /* Adicionando display flex para alinhar a imagem e o conteúdo lado a lado */
+    align-items: center; /* Alinhando verticalmente */
+    justify-content: space-between; /* Distribuindo o espaço entre a imagem e o conteúdo */
+}
+
+.banner-2 .banner-content-2 {
+    flex: 1;
+}
+
+.banner-2 .img-banner-2 {
+    flex: 1;
+    text-align: right;
+    margin: 0 90px;
+}
+
+.banner-2 .title-banner-2 {
+    text-align: left;
+    color: #000;
+    font-weight: 500;
+    font-size: 35px;
+    padding-bottom: 15px;
+}
+
+.banner-2 .effect-text {
+    text-align: justify;
+    font-size: 16pt;
+
+}
 
 /* Ajuste a margem entre os cards */
 .card {
     height: 100%;
     margin-bottom: 20px;
+}
+
+.small-cards {
+    padding: 100px 0px 0px 140px;
 }
 
 .small-cards .card {
@@ -233,4 +273,13 @@ div.col-md-4 {
     display: flex;
     justify-content: center;
     padding: 0px 0px 0px 50px;
+}
+
+.why-cards .title-card-2 {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.why-cards {
+    padding: 100px 0px 0px 140px;
 }
