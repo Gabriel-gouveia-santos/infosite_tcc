@@ -2,40 +2,40 @@ body {
     margin: 0;
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    min-height: 100%;
 }
 
 /* Estilos para o menu */
 header {
     background-color: #2A66DA; /* Cor de fundo do menu */
     color: #fff; /* Cor do texto */
-    padding: 3px 0; /* Espaçamento interno */
+    padding: 0.20% 0; /* Espaçamento interno */
     display: flex; /* Torna o cabeçalho um contêiner flexível */
     justify-content: center; /* Distribui os elementos ao longo do cabeçalho */
     align-items: center; /* Alinha os itens verticalmente */
 }
 
 .logo {
-    width: 70px;
-    height: 70px;
-    margin-right: 250px;
+    width: 7%;
+    height: 7%;
+    margin-right: 25%;
 }
 
 nav {
     flex: 1; /* Ocupa todo o espaço restante */
-    margin-left: 130px;
-    margin-right: 130px;
+    margin-left: 10%;
+    margin-right: 10%;
     display: flex;
     align-items: center;
 }
 
 nav a {
-    font-size: 16px;
+    font-size: 12pt;
     font-weight: 600;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: #fff; /* Cor do texto do link */
     text-decoration: none; /* Remove sublinhado padrão do link */
-    margin-right: 70px; /* Espaçamento entre os itens */
+    margin-right: 6%; /* Espaçamento entre os itens */
     transition: color 0.3s; /* Transição suave da cor */
 }
 
@@ -47,7 +47,7 @@ nav a:hover {
 .footer-bg {
     background-color: #2A66DA;
     color: #fff;
-    padding: 50px 0 0 0; /* Remove o padding inferior */
+    padding: 5% 0 0 0; /* Remove o padding inferior */
     width: 100%;
 }
 
@@ -71,7 +71,7 @@ nav a:hover {
 }
 
 .footer-bg ul li {
-    margin-bottom: 10px;
+    margin-bottom: 4%;
 }
 
 .footer-bg ul li a {
@@ -90,7 +90,6 @@ nav a:hover {
 
 .footer-bg .fl-us li {
     display: inline-block;
-    margin-right: 10px;
 }
 
 .footer-bg .fl-us li a {
@@ -103,19 +102,19 @@ nav a:hover {
 }
 
 .footer-bg p {
-    margin-top: 20px;
     color: #fff;
 }
 
 .footer-logo {
+    width: 50%;
+    height: 50%;
     border: 2px solid #fff; /* Borda branca */
     border-radius: 50%; /* Borda arredondada */
-    padding: 5px; /* Espaçamento interno para separar a borda da imagem */
+    padding: 5%; /* Espaçamento interno para separar a borda da imagem */
 }
 
 .footer-bottom {
     color: #fff;
-    padding: 10px 0;
     text-align: center;
     margin-top: auto; /* Adiciona margem automática na parte superior */
 }
@@ -123,19 +122,19 @@ nav a:hover {
 .github {
     margin: 0;
     padding: 0;
-    width: 70px;
-    height: 70px;
+    width: 20%;
+    height: 20%;
 }
 
 /* Estilos adicionais para o conteúdo principal */
 .main-content {
     flex: 1; /* Flexível para ocupar o espaço restante */
-    margin-bottom: 150px; /* Para compensar a altura do footer fixo */
+    margin-bottom: 15%; /* Para compensar a altura do footer fixo */
 }
 
 /* Estilo para o banner */
 .banner {
-    padding: 70px 0px 140px 140px; /* Aumentando o padding para aumentar o espaço ao redor do banner */
+    padding: 7% 0 14% 11%; /* Aumentando o padding para aumentar o espaço ao redor do banner */
     text-align: left;
     display: flex; /* Adicionando display flex para alinhar a imagem e o conteúdo lado a lado */
     align-items: center; /* Alinhando verticalmente */
@@ -143,18 +142,21 @@ nav a:hover {
 }
 
 .banner .text-description {
-    padding-top: 12px;
+    padding-top: 4%;
 }
 
 /* Estilo para a imagem */
 .banner img {
-    max-width: 370px; /* Definindo a largura máxima da imagem */
+    max-width: 100%; /* Definindo a largura máxima da imagem */
 }
 
 /* Estilo para a imagem do banner */
 .img-banner {
-    margin: 0 90px; /* Ajustando a margem esquerda para mover a imagem mais para a esquerda */
+    max-width: 33%; /* Defina a largura máxima da div de imagem */
+    float: right; /* Alinhe a div de imagem à direita */
+    margin-right: 8%; /* Adicione uma margem à esquerda para separar a imagem do texto */
 }
+
 
 .banner-content {
     padding-bottom: 10%;
@@ -164,7 +166,7 @@ nav a:hover {
 .banner-content h1 {
     display: inline;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 35px;
+    font-size: 25pt;
     font-weight: bold;
 }
 
@@ -178,31 +180,31 @@ nav a:hover {
 
 /* Estilo para a descrição */
 .banner-content p {
-    font-size: 16px;
+    font-size: 12pt;
     color: #666;
 }
 
 /* Estilo para o texto de efeito */
 .banner-content .effect-text {
-    font-size: 20px;
+    font-size: 16pt;
     color: #a8a6a6;
     font-weight: bold;
 }
 
 /* Estilo para o botão */
 .banner-content button {
-    padding: 10px 20px;
+    padding: 2% 4%;
     background-color: #2A66DA;
     color: #fff;
     border: none;
     border-radius: 5px;
-    font-size: 18px;
+    font-size: 14pt;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
 .banner-2 {
-    padding: 0px 0px 0px 140px; /* Aumentando o padding para aumentar o espaço ao redor do banner */
+    padding: 0 0 14% 11%; /* Aumentando o padding para aumentar o espaço ao redor do banner */
     text-align: left;
     display: flex; /* Adicionando display flex para alinhar a imagem e o conteúdo lado a lado */
     align-items: center; /* Alinhando verticalmente */
@@ -216,63 +218,62 @@ nav a:hover {
 .banner-2 .img-banner-2 {
     flex: 1;
     text-align: right;
-    margin: 0 90px;
+    margin: 0 8% 0 0;
 }
 
 .banner-2 .title-banner-2 {
     text-align: left;
     color: #000;
     font-weight: 500;
-    font-size: 35px;
-    padding-bottom: 15px;
+    font-size: 25pt;
+    padding-bottom: 3%;
 }
 
 .banner-2 .effect-text {
     text-align: justify;
     font-size: 16pt;
-
 }
 
 /* Ajuste a margem entre os cards */
 .card {
     height: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 2%;
 }
 
 .small-cards {
-    padding: 100px 0px 0px 140px;
+    padding: 0 0 14% 11%;
 }
 
 .small-cards .card {
     width: 100%;
     height: 100%;
-    padding-top: 20px;
+    padding-top: 4%;
     max-width: 32rem; /* Define a largura máxima dos cards */
     border: none; /* Remove a borda dos cards */
 }
 
 .small-cards .title-card-1 {
     text-align: center;
-    padding-bottom: 20px;
+    padding-bottom: 2%;
 }
 
 .small-cards .card-img {
-    width: 100px;
-    height: 100px;
+    width: 80%;
+    height: 90%;
     justify-content: right;
     align-items: center;
 }
 
 .small-cards .card-body {
     font-size: 15px;
-    padding: 0px 0px 0px 0px;
+    padding: 0;
 }
 
 /* CSS para remover o padding */
 div.col-md-4 {
     display: flex;
     justify-content: center;
-    padding: 0px 0px 0px 50px;
+    padding: 0 0 0 5%;
 }
 
 .why-cards .title-card-2 {
@@ -281,5 +282,5 @@ div.col-md-4 {
 }
 
 .why-cards {
-    padding: 100px 0px 0px 140px;
+    padding: 0 0 14% 11%;
 }
