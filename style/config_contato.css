@@ -129,12 +129,11 @@ nav a:hover {
 /* Estilos adicionais para o conteúdo principal */
 .main-content {
     flex: 1; /* Flexível para ocupar o espaço restante */
-    margin-bottom: 15%; /* Para compensar a altura do footer fixo */
 }
 
 /* Estilos para o formulário de contato */
 .container-form {
-    max-width: 90%; /* Altere para o valor desejado, por exemplo, 90% */
+    max-width: 100%; /* Altere para o valor desejado, por exemplo, 90% */
     padding: 5% 0; /* Ajuste o espaçamento superior e inferior conforme necessário */
     display: flex;
     justify-content: center;
@@ -142,8 +141,7 @@ nav a:hover {
 }
 
 .contact-box {
-    width: 90%; /* Defina a largura do formulário */
-    max-width: 30%; /* Defina um máximo razoável */
+    max-width: 35%; /* Defina um máximo razoável */
     padding: 30px 5%; /* Ajuste o padding conforme necessário */
     border: 1px solid #ccc;
     border-radius: 10px;
@@ -166,7 +164,10 @@ nav a:hover {
 }
 
 .contact-box button {
-    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2% 0;
 }
 
 @media (max-width: 768px) {
