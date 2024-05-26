@@ -105,6 +105,10 @@ nav a:hover {
     color: #fff;
 }
 
+.footer-bg .title {
+    font-weight: bold;
+}
+
 .footer-logo {
     width: 50%;
     height: 50%;
