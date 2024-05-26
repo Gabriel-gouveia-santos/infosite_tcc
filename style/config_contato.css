@@ -132,10 +132,51 @@ nav a:hover {
     margin-bottom: 15%; /* Para compensar a altura do footer fixo */
 }
 
-/* CSS para remover o padding */
-div.col-md-4 {
+/* Estilos para o formulário de contato */
+.container-form {
+    max-width: 90%; /* Altere para o valor desejado, por exemplo, 90% */
+    padding: 5% 0; /* Ajuste o espaçamento superior e inferior conforme necessário */
     display: flex;
     justify-content: center;
-    padding: 0px 0px 0px 50px;
+    align-items: center;
+}
+
+.contact-box {
+    width: 90%; /* Defina a largura do formulário */
+    max-width: 30%; /* Defina um máximo razoável */
+    padding: 30px 5%; /* Ajuste o padding conforme necessário */
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-box h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.contact-box .form-label {
+    font-weight: bold;
+}
+
+.contact-box .form-control {
+    margin-bottom: 15px;
+}
+
+.contact-box button {
+    margin-top: 15px;
+}
+
+@media (max-width: 768px) {
+    .container-form {
+        padding: 10% 0; /* Ajuste o espaçamento para telas menores, se necessário */
+    }
+
+    .contact-box {
+        width: 90%;
+        padding: 20px 5%;
+    }
 }
 
