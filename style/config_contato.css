@@ -43,6 +43,50 @@ nav a:hover {
     color: #cdcdcd; /* Cor do texto ao passar o mouse */
 }
 
+/* Estilos adicionais para o conteúdo principal */
+.main-content {
+    flex: 1; /* Flexível para ocupar o espaço restante */
+}
+
+/* Estilos para o formulário de contato */
+.container-form {
+    max-width: 100%; /* Altere para o valor desejado, por exemplo, 90% */
+    padding: 5% 0; /* Ajuste o espaçamento superior e inferior conforme necessário */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-box {
+    max-width: 35%; /* Defina um máximo razoável */
+    padding: 30px 5%; /* Ajuste o padding conforme necessário */
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-box h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.contact-box .form-label {
+    font-weight: bold;
+}
+
+.contact-box .form-control {
+    margin-bottom: 15px;
+}
+
+.contact-box button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2% 0;
+}
+
 /* Estilos para o footer */
 .footer-bg {
     background-color: #2A66DA;
@@ -128,50 +172,6 @@ nav a:hover {
     padding: 0;
     width: 20%;
     height: 20%;
-}
-
-/* Estilos adicionais para o conteúdo principal */
-.main-content {
-    flex: 1; /* Flexível para ocupar o espaço restante */
-}
-
-/* Estilos para o formulário de contato */
-.container-form {
-    max-width: 100%; /* Altere para o valor desejado, por exemplo, 90% */
-    padding: 5% 0; /* Ajuste o espaçamento superior e inferior conforme necessário */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.contact-box {
-    max-width: 35%; /* Defina um máximo razoável */
-    padding: 30px 5%; /* Ajuste o padding conforme necessário */
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    background-color: #f9f9f9;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.contact-box h2 {
-    margin-bottom: 20px;
-    font-size: 24px;
-    color: #333;
-}
-
-.contact-box .form-label {
-    font-weight: bold;
-}
-
-.contact-box .form-control {
-    margin-bottom: 15px;
-}
-
-.contact-box button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 2% 0;
 }
 
 @media (max-width: 768px) {

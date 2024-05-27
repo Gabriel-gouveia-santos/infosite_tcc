@@ -43,6 +43,19 @@ nav a:hover {
     color: #cdcdcd; /* Cor do texto ao passar o mouse */
 }
 
+/* Estilos adicionais para o conteúdo principal */
+.main-content {
+    flex: 1; /* Flexível para ocupar o espaço restante */
+    margin-bottom: 15%; /* Para compensar a altura do footer fixo */
+}
+
+/* CSS para remover o padding */
+div.col-md-4 {
+    display: flex;
+    justify-content: center;
+    padding: 0px 0px 0px 50px;
+}
+
 /* Estilos para o footer */
 .footer-bg {
     background-color: #2A66DA;
@@ -104,10 +117,10 @@ nav a:hover {
 .footer-bg p {
     color: #fff;
 }
+
 .footer-bg .title {
     font-weight: bold;
 }
-
 
 .footer-logo {
     width: 50%;
@@ -129,17 +142,3 @@ nav a:hover {
     width: 20%;
     height: 20%;
 }
-
-/* Estilos adicionais para o conteúdo principal */
-.main-content {
-    flex: 1; /* Flexível para ocupar o espaço restante */
-    margin-bottom: 15%; /* Para compensar a altura do footer fixo */
-}
-
-/* CSS para remover o padding */
-div.col-md-4 {
-    display: flex;
-    justify-content: center;
-    padding: 0px 0px 0px 50px;
-}
-

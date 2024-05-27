@@ -43,97 +43,17 @@ nav a:hover {
     color: #cdcdcd; /* Cor do texto ao passar o mouse */
 }
 
-/* Estilos para o footer */
-.footer-bg {
-    background-color: #2A66DA;
-    color: #fff;
-    padding: 5% 0 0 0; /* Remove o padding inferior */
-    width: 100%;
-}
-
-.footer-bg .dl-btn {
-    color: #fff;
-}
-
-.footer-bg .dl-btn a {
-    color: #fff;
-    text-decoration: none;
-    display: block;
-}
-
-.footer-bg .dl-btn a:hover {
-    text-decoration: underline;
-}
-
-.footer-bg ul {
-    list-style: none;
-    padding: 0;
-}
-
-.footer-bg ul li {
-    margin-bottom: 4%;
-}
-
-.footer-bg ul li a {
-    color: #fff;
-    text-decoration: none;
-}
-
-.footer-bg ul li a:hover {
-    text-decoration: underline;
-}
-
-.footer-bg .fl-us {
-    list-style: none;
-    padding: 0;
-}
-
-.footer-bg .fl-us li {
-    display: inline-block;
-}
-
-.footer-bg .fl-us li a {
-    color: #fff;
-    text-decoration: none;
-}
-
-.footer-bg .fl-us li a:hover {
-    text-decoration: underline;
-}
-
-.footer-bg p {
-    color: #fff;
-}
-
-.footer-bg .title {
-    font-weight: bold;
-}
-
-.footer-logo {
-    width: 50%;
-    height: 50%;
-    border: 2px solid #fff; /* Borda branca */
-    border-radius: 50%; /* Borda arredondada */
-    padding: 5%; /* Espaçamento interno para separar a borda da imagem */
-}
-
-.footer-bottom {
-    color: #fff;
-    text-align: center;
-    margin-top: auto; /* Adiciona margem automática na parte superior */
-}
-
-.github {
-    margin: 0;
-    padding: 0;
-    width: 20%;
-    height: 20%;
-}
-
 /* Estilos adicionais para o conteúdo principal */
 .main-content {
     flex: 1; /* Flexível para ocupar o espaço restante */
     margin-bottom: 15%; /* Para compensar a altura do footer fixo */
+}
+
+/* CSS para remover o padding */
+div.col-md-4 {
+    display: flex;
+    justify-content: center;
+    padding: 0 0 0 5%;
 }
 
 /* Estilo para o banner */
@@ -272,13 +192,6 @@ nav a:hover {
     padding: 0;
 }
 
-/* CSS para remover o padding */
-div.col-md-4 {
-    display: flex;
-    justify-content: center;
-    padding: 0 0 0 5%;
-}
-
 .why-cards .title-card-2 {
     text-align: center;
     padding-bottom: 20px;
@@ -286,4 +199,91 @@ div.col-md-4 {
 
 .why-cards {
     padding: 0 0 14% 11%;
+}
+
+/* Estilos para o footer */
+.footer-bg {
+    background-color: #2A66DA;
+    color: #fff;
+    padding: 5% 0 0 0; /* Remove o padding inferior */
+    width: 100%;
+}
+
+.footer-bg .dl-btn {
+    color: #fff;
+}
+
+.footer-bg .dl-btn a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+}
+
+.footer-bg .dl-btn a:hover {
+    text-decoration: underline;
+}
+
+.footer-bg ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-bg ul li {
+    margin-bottom: 4%;
+}
+
+.footer-bg ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-bg ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-bg .fl-us {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-bg .fl-us li {
+    display: inline-block;
+}
+
+.footer-bg .fl-us li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-bg .fl-us li a:hover {
+    text-decoration: underline;
+}
+
+.footer-bg p {
+    color: #fff;
+}
+
+.footer-bg .title {
+    font-weight: bold;
+}
+
+.footer-logo {
+    width: 50%;
+    height: 50%;
+    border: 2px solid #fff; /* Borda branca */
+    border-radius: 50%; /* Borda arredondada */
+    padding: 5%; /* Espaçamento interno para separar a borda da imagem */
+}
+
+.footer-bottom {
+    color: #fff;
+    text-align: center;
+    margin-top: auto; /* Adiciona margem automática na parte superior */
+}
+
+.github {
+    margin: 0;
+    padding: 0;
+    width: 20%;
+    height: 20%;
 }
