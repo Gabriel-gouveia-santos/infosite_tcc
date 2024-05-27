@@ -115,7 +115,7 @@ div.col-md-4 {
 }
 
 /* Estilo para o botão */
-.banner-content button {
+.banner-content button{
     padding: 2% 4%;
     background-color: #2A66DA;
     color: #fff;
@@ -124,6 +124,11 @@ div.col-md-4 {
     font-size: 14pt;
     cursor: pointer;
     transition: background-color 0.3s ease;
+}
+
+.banner-content button a {
+    color: #fff;
+    text-decoration: none;
 }
 
 .banner-2 {
