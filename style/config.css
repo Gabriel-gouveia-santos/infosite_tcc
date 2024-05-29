@@ -292,3 +292,109 @@ div.col-md-4 {
     width: 20%;
     height: 20%;
 }
+
+/* Adicionando regra de mídia para telas menores que 768px */
+@media (max-width: 767px) {
+    .logo {
+        width: 20%; /* Redimensionando o logo para ocupar menos espaço */
+        margin: 0 auto; /* Centralizando o logo */
+    }
+
+    nav {
+        text-align: center; /* Alinhando os itens do menu ao centro */
+    }
+
+    nav a {
+        display: block; /* Transformando os links do menu em blocos */
+        margin: 10px 0; /* Adicionando espaço entre os links */
+    }
+
+    .banner {
+        padding: 10% 5%; /* Redefinindo o padding */
+        flex-direction: column; /* Colocando os elementos do banner em coluna */
+        text-align: center; /* Alinhando o texto do banner ao centro */
+    }
+
+    .img-banner {
+        max-width: 100%; /* Tornando a imagem do banner responsiva */
+        margin: 20px auto; /* Centralizando a imagem */
+    }
+
+    .banner-content {
+        padding: 5% 0; /* Redefinindo o padding */
+    }
+
+    .banner-content h1 {
+        font-size: 24px; /* Reduzindo o tamanho do título */
+    }
+
+    .banner-content p {
+        font-size: 14px; /* Reduzindo o tamanho do texto */
+    }
+
+    .banner-2 {
+        padding: 10% 5%; /* Redefinindo o padding */
+        flex-direction: column; /* Colocando os elementos do banner em coluna */
+        text-align: center; /* Alinhando o texto do banner ao centro */
+    }
+
+    .img-banner-2 {
+        max-width: 100%; /* Tornando a imagem do banner responsiva */
+        margin: 20px auto; /* Centralizando a imagem */
+    }
+
+    .banner-content-2 {
+        padding: 5% 0; /* Redefinindo o padding */
+    }
+
+    .banner-content-2 h1 {
+        font-size: 24px; /* Reduzindo o tamanho do título */
+    }
+
+    .banner-content-2 p {
+        font-size: 14px; /* Reduzindo o tamanho do texto */
+    }
+
+    .why-cards {
+        padding: 0 5%; /* Adicionando padding lateral */
+    }
+
+    .container {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+}
+
+/* Adicionando regra de mídia para telas maiores que 767px */
+@media (min-width: 768px) {
+
+    .logo {
+        width: 10%; /* Redimensionando o logo */
+    }
+
+    .banner {
+        padding: 7% 0 14% 11%; /* Redefinindo o padding */
+    }
+
+    .img-banner {
+        max-width: 33%; /* Tornando a imagem do banner responsiva */
+        margin-right: 8%; /* Ajustando a margem */
+    }
+
+    .banner-content h1 {
+        font-size: 25pt; /* Redefinindo o tamanho do título */
+    }
+
+    .banner-content p {
+        font-size: 12pt; /* Redefinindo o tamanho do texto */
+    }
+
+    .why-cards {
+        padding-left: 11%; /* Redefinindo o padding */
+        padding-right: 11%; /* Redefinindo o padding */
+    }
+    .container {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+}
