@@ -185,3 +185,59 @@ nav a:hover {
     }
 }
 
+/* Adicionando regra de mídia para telas menores que 768px */
+@media (max-width: 767px) {
+    .logo {
+        width: 20%; /* Redimensionando o logo para ocupar menos espaço */
+        margin: 0 auto; /* Centralizando o logo */
+    }
+
+    nav {
+        text-align: center; /* Alinhando os itens do menu ao centro */
+    }
+
+    nav a {
+        display: block; /* Transformando os links do menu em blocos */
+        margin: 10px 0; /* Adicionando espaço entre os links */
+    }
+
+    .container-form {
+        padding: 10% 0; /* Ajuste o espaçamento para telas menores, se necessário */
+        max-width: 90%;
+        margin: 0 auto;
+    }
+
+    .contact-box {
+        width: 80%;
+        padding: 20px 5%;
+    }
+
+    /* Estilos para os campos do formulário em telas menores */
+    .form-label {
+        font-size: 14px; /* Reduz o tamanho da fonte das etiquetas */
+    }
+}
+
+/* Adicionando regra de mídia para telas maiores que 767px */
+@media (min-width: 768px) {
+
+    .logo {
+        width: 10%; /* Redimensionando o logo */
+    }
+
+    .container-form {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+
+    .contact-box {
+        width: 30%; /* Define a largura do formulário */
+        padding: 20px 25px; /* Ajusta o preenchimento interno */
+    }
+
+    /* Estilos para os campos do formulário em telas maiores */
+    .form-label {
+        font-size: 16px; /* Ajusta o tamanho da fonte das etiquetas */
+    }
+}
+
