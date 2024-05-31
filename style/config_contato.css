@@ -174,17 +174,6 @@ nav a:hover {
     height: 20%;
 }
 
-@media (max-width: 768px) {
-    .container-form {
-        padding: 10% 0; /* Ajuste o espaçamento para telas menores, se necessário */
-    }
-
-    .contact-box {
-        width: 90%;
-        padding: 20px 5%;
-    }
-}
-
 /* Adicionando regra de mídia para telas menores que 768px */
 @media (max-width: 767px) {
     .logo {
@@ -208,7 +197,7 @@ nav a:hover {
     }
 
     .contact-box {
-        width: 80%;
+        width: 90%;
         padding: 20px 5%;
     }
 
@@ -220,7 +209,6 @@ nav a:hover {
 
 /* Adicionando regra de mídia para telas maiores que 767px */
 @media (min-width: 768px) {
-
     .logo {
         width: 10%; /* Redimensionando o logo */
     }

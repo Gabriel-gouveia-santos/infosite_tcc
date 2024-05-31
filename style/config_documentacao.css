@@ -46,14 +46,115 @@ nav a:hover {
 /* Estilos adicionais para o conteúdo principal */
 .main-content {
     flex: 1; /* Flexível para ocupar o espaço restante */
-    margin-bottom: 15%; /* Para compensar a altura do footer fixo */
 }
 
-/* CSS para remover o padding */
-div.col-md-4 {
-    display: flex;
-    justify-content: center;
-    padding: 0px 0px 0px 50px;
+/* Estilo para o banner */
+.banner {
+    padding: 5% 0 14% 11%; /* Aumentando o padding para aumentar o espaço ao redor do banner */
+    text-align: left;
+    display: flex; /* Adicionando display flex para alinhar a imagem e o conteúdo lado a lado */
+    justify-content: space-between; /* Distribuindo o espaço entre a imagem e o conteúdo */
+}
+
+.banner-content {
+    padding-right: 10%;
+}
+
+.banner .banner-content {
+    flex: 1;
+}
+
+/* Estilo para a imagem */
+.banner img {
+    max-width: 100%; /* Definindo a largura máxima da imagem */
+}
+
+/* Estilo para a imagem do banner */
+.img-banner {
+    max-width: 33%; /* Defina a largura máxima da div de imagem */
+    float: right; /* Alinhe a div de imagem à direita */
+    margin-right: 8%; /* Adicione uma margem à esquerda para separar a imagem do texto */
+}
+
+.title-banner {
+    text-align: left;
+    color: #000;
+    font-weight: 500;
+    font-size: 25pt;
+    padding: 3% 0;
+}
+
+.effect-text {
+    text-align: justify;
+    font-size: 16pt;
+}
+
+.banner-2 {
+    padding: 0 11% 14% 0; /* Aumentando o padding para aumentar o espaço ao redor do banner */
+    text-align: left;
+    display: flex; /* Adicionando display flex para alinhar a imagem e o conteúdo lado a lado */
+    justify-content: space-between; /* Distribuindo o espaço entre a imagem e o conteúdo */
+}
+
+.banner-content-2 {
+    padding-left: 10%;
+}
+
+.banner-2 .banner-content-2 {
+    flex: 1;
+}
+
+.banner-2 .img-banner-2 {
+    max-width: 33%; /* Defina a largura máxima da div de imagem */
+    float: left; /* Alinhe a div de imagem à esquerda */
+    margin-left: 8%; /* Adicione uma margem à direita para separar a imagem do texto */
+}
+
+.title-banner-2 {
+    text-align: left;
+    color: #000;
+    font-weight: 500;
+    font-size: 25pt;
+    padding: 3% 0;
+}
+
+.effect-text-2 {
+    text-align: justify;
+    font-size: 16pt;
+}
+
+/* Estilo para o banner */
+.banner-3 {
+    background-color: #262626;
+    padding: 5% 22% 14% 11%; /* Aumentando o padding para aumentar o espaço ao redor do banner */
+    text-align: left;
+    display: flex; /* Adicionando display flex para alinhar a imagem e o conteúdo lado a lado */
+    justify-content: space-between; /* Distribuindo o espaço entre a imagem e o conteúdo */
+}
+
+.banner-3 .banner-content-3 {
+    flex: 1;
+}
+
+/* Estilo para a imagem do banner */
+.img-banner-3 {
+    max-width: 33%; /* Defina a largura máxima da div de imagem */
+    float: right; /* Alinhe a div de imagem à direita */
+    margin-right: 8%; /* Adicione uma margem à esquerda para separar a imagem do texto */
+}
+
+.title-banner-3 {
+    text-align: left;
+    color: #fff;
+    font-weight: 500;
+    font-size: 25pt;
+    padding: 3% 0;
+}
+
+.effect-text-3 {
+    color: #ccc1c1;
+    text-align: justify;
+    font-size: 16pt;
 }
 
 /* Estilos para o footer */
@@ -141,4 +242,89 @@ div.col-md-4 {
     padding: 0;
     width: 20%;
     height: 20%;
+}
+
+/* Adicionando regra de mídia para telas menores que 768px */
+@media (max-width: 767px) {
+
+    .logo {
+        width: 20%; /* Redimensionando o logo para ocupar menos espaço */
+        margin: 0 auto; /* Centralizando o logo */
+    }
+
+    nav {
+        text-align: center; /* Alinhando os itens do menu ao centro */
+    }
+
+    nav a {
+        display: block; /* Transformando os links do menu em blocos */
+        margin: 10px 0; /* Adicionando espaço entre os links */
+    }
+
+    .banner, .banner-2, .banner-3{
+        padding: 10% 5%; /* Redefinindo o padding */
+        flex-direction: column; /* Colocando os elementos do banner em coluna */
+        text-align: center; /* Alinhando o texto do banner ao centro */
+    }
+
+    .img-banner, .img-banner-2, .img-banner-3{
+        max-width: 100%; /* Tornando a imagem do banner responsiva */
+        margin: 20px auto; /* Centralizando a imagem */
+    }
+
+    .banner-content, .banner-content-2, .banner-content-3 {
+        padding: 5% 0; /* Redefinindo o padding */
+    }
+
+    .banner-content h2 {
+        font-size: 24px; /* Reduzindo o tamanho do título */
+    }
+    .banner-content-2 h2 {
+        font-size: 24px; /* Reduzindo o tamanho do título */
+    }
+
+    .banner-content-3 h2 {
+        font-size: 24px; /* Reduzindo o tamanho do título */
+    }
+
+    .banner-content p {
+        font-size: 14px; /* Reduzindo o tamanho do texto */
+    }
+
+    .banner-content-2 p {
+        font-size: 14px; /* Reduzindo o tamanho do texto */
+    }
+
+    .banner-content-3 p {
+        font-size: 14px; /* Reduzindo o tamanho do texto */
+    }
+}
+
+/* Adicionando regra de mídia para telas maiores que 767px */
+@media (min-width: 768px) {
+
+    .banner-content h2 {
+        font-size: 25pt; /* Redefinindo o tamanho do título */
+    }
+
+    .banner-content p {
+        font-size: 14pt; /* Redefinindo o tamanho do texto */
+    }
+
+    .banner-content-2 h2 {
+        font-size: 25pt; /* Redefinindo o tamanho do título */
+    }
+
+    .banner-content-2 p {
+        font-size: 14pt; /* Redefinindo o tamanho do texto */
+    }
+
+    .banner-content-3 h2 {
+        font-size: 25pt; /* Redefinindo o tamanho do título */
+    }
+
+    .banner-content-3 p {
+        font-size: 14pt; /* Redefinindo o tamanho do texto */
+    }
+
 }
