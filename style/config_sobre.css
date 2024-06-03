@@ -56,7 +56,7 @@ div.col-md-4 {
 }
 
 .banner {
-    padding: 6% 0 5% 11%; /* Aumentando o padding para aumentar o espaço ao redor do banner */
+    padding: 3% 0 5% 11%; /* Aumentando o padding para aumentar o espaço ao redor do banner */
     text-align: left;
     display: flex; /* Adicionando display flex para alinhar a imagem e o conteúdo lado a lado */
     align-items: center; /* Alinhando verticalmente */
@@ -71,6 +71,11 @@ div.col-md-4 {
     flex: 1;
     text-align: right;
     margin: 0 8% 0 0;
+}
+
+.img-banner img {
+    width: 100%; 
+    height: 80%;
 }
 
 .banner .title-banner {
@@ -91,8 +96,8 @@ div.col-md-4 {
 }
 
 .card {
-    width: 100%;
-    margin: 0 auto; /* Isso centraliza os cards na página */
+    max-width: 100%;
+    margin: 0; /* Isso centraliza os cards na página */
 }
 
 .card-body {
@@ -101,16 +106,18 @@ div.col-md-4 {
     background-color: #eeeeee; 
     border: 3px solid #2A66DA;
     border-radius: 8px;
-    padding: 0 0 10% 11%;
 }
 
 .card h5 {
     text-align: center;
     overflow-wrap: break-word;
+    font-size: 16px; /* Reduza um pouco o tamanho da fonte */
 }
 
 .dev-cards {
-    padding: 0 0 16% 11%;
+    display: flex;
+    justify-content: center;
+    padding: 0 0 16% 0;
 }
 
 .title-card {
@@ -123,7 +130,7 @@ div.col-md-4 {
 .contact-info {
     display: flex;
     align-items: center; /* Alinhar itens verticalmente */
-    padding: 5% 2%;
+    padding: 2% 0; /* Ajuste o padding para dar mais espaço entre as informações de contato */
 }
 
 .contact-info img {
@@ -135,6 +142,8 @@ div.col-md-4 {
 .contact-info span {
     overflow: hidden; /* Evita que o texto ultrapasse o tamanho do contêiner */
     white-space: nowrap; /* Evita que o texto quebre em várias linhas */
+    word-wrap: break-word; /* Permite que o texto longo seja quebrado em linhas */
+    flex-grow: 1; /* Permite que o texto ocupe o espaço disponível */
 }
 
 /* Estilos para o footer */
@@ -269,7 +278,6 @@ div.col-md-4 {
 
     .container {
         max-width: 90%;
-        margin: 0 auto;
     }
 }
 
@@ -281,7 +289,7 @@ div.col-md-4 {
     }
 
     .banner {
-        padding: 7% 0 14% 11%; /* Redefinindo o padding */
+        padding: 3% 0 14% 11%; /* Redefinindo o padding */
     }
 
     .img-banner {
@@ -295,11 +303,6 @@ div.col-md-4 {
 
     .banner-content p {
         font-size: 12pt; /* Redefinindo o tamanho do texto */
-    }
-
-    .dev-cards {
-        padding-left: 11%; /* Redefinindo o padding */
-        padding-right: 11%; /* Redefinindo o padding */
     }
 
     .container {

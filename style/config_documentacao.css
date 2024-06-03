@@ -48,16 +48,65 @@ nav a:hover {
     flex: 1; /* Flexível para ocupar o espaço restante */
 }
 
+.banner-title {
+    padding: 5% 0 0 11%; /* Aumentando o padding para aumentar o espaço ao redor do banner */
+    text-align: left;
+    display: flex; /* Adicionando display flex para alinhar a imagem e o conteúdo lado a lado */
+    align-items: center; /* Alinhando verticalmente */
+    justify-content: space-between; /* Distribuindo o espaço entre a imagem e o conteúdo */
+}
+
+.banner-content-title {
+    padding-bottom: 5%;
+}
+
+/* Estilo para o título */
+.banner-content-title h1 {
+    display: inline;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 40pt;
+}
+
+.banner-content-title .gallo {
+    color: #2A66DA;
+    font-weight: bold;
+}
+
+.banner-content-title .title {
+    color: #000;
+}
+
+.banner-sobre {
+    padding: 0 36% 14% 11%; /* Aumentando o padding para aumentar o espaço ao redor do banner */
+    text-align: left;
+    display: flex; /* Adicionando display flex para alinhar a imagem e o conteúdo lado a lado */
+    align-items: center; /* Alinhando verticalmente */
+    justify-content: space-between; /* Distribuindo o espaço entre a imagem e o conteúdo */
+}
+
+.banner-sobre .banner-content-sobre {
+    flex: 1;
+}
+
+.banner-sobre .title-banner-sobre {
+    text-align: left;
+    color: #000;
+    font-weight: 500;
+    font-size: 25pt;
+    padding-bottom: 3%;
+}
+
+.banner-sobre .effect-text-sobre {
+    text-align: justify;
+    font-size: 16pt;
+}
+
 /* Estilo para o banner */
 .banner {
     padding: 5% 0 14% 11%; /* Aumentando o padding para aumentar o espaço ao redor do banner */
     text-align: left;
     display: flex; /* Adicionando display flex para alinhar a imagem e o conteúdo lado a lado */
     justify-content: space-between; /* Distribuindo o espaço entre a imagem e o conteúdo */
-}
-
-.banner-content {
-    padding-right: 10%;
 }
 
 .banner .banner-content {
@@ -74,6 +123,12 @@ nav a:hover {
     max-width: 33%; /* Defina a largura máxima da div de imagem */
     float: right; /* Alinhe a div de imagem à direita */
     margin-right: 8%; /* Adicione uma margem à esquerda para separar a imagem do texto */
+}
+
+.img-banner img {
+    width: 100%; 
+    height: 100%;
+    padding-left: 25%;
 }
 
 .title-banner {
@@ -96,10 +151,6 @@ nav a:hover {
     justify-content: space-between; /* Distribuindo o espaço entre a imagem e o conteúdo */
 }
 
-.banner-content-2 {
-    padding-left: 10%;
-}
-
 .banner-2 .banner-content-2 {
     flex: 1;
 }
@@ -108,6 +159,11 @@ nav a:hover {
     max-width: 33%; /* Defina a largura máxima da div de imagem */
     float: left; /* Alinhe a div de imagem à esquerda */
     margin-left: 8%; /* Adicione uma margem à direita para separar a imagem do texto */
+}
+
+.img-banner-2 img {
+    width: 80%; 
+    height: 100%;
 }
 
 .title-banner-2 {
@@ -126,7 +182,7 @@ nav a:hover {
 /* Estilo para o banner */
 .banner-3 {
     background-color: #262626;
-    padding: 5% 22% 14% 11%; /* Aumentando o padding para aumentar o espaço ao redor do banner */
+    padding: 5% 18% 14% 11%; /* Aumentando o padding para aumentar o espaço ao redor do banner */
     text-align: left;
     display: flex; /* Adicionando display flex para alinhar a imagem e o conteúdo lado a lado */
     justify-content: space-between; /* Distribuindo o espaço entre a imagem e o conteúdo */
@@ -136,11 +192,28 @@ nav a:hover {
     flex: 1;
 }
 
+.banner-3 ul{
+    color: #fff;
+    font-weight: 700;
+    padding-top: 10%;
+    text-align: justify;
+}
+
+.banner-3 ul .blue-text{
+    color: #1575FF;
+    font-weight: 800;
+}
+
 /* Estilo para a imagem do banner */
 .img-banner-3 {
     max-width: 33%; /* Defina a largura máxima da div de imagem */
     float: right; /* Alinhe a div de imagem à direita */
     margin-right: 8%; /* Adicione uma margem à esquerda para separar a imagem do texto */
+}
+
+.img-banner-3 img {
+    width: 167%; 
+    height: 100%;
 }
 
 .title-banner-3 {
@@ -152,7 +225,7 @@ nav a:hover {
 }
 
 .effect-text-3 {
-    color: #ccc1c1;
+    color: #fff;
     text-align: justify;
     font-size: 16pt;
 }
@@ -261,6 +334,42 @@ nav a:hover {
         margin: 10px 0; /* Adicionando espaço entre os links */
     }
 
+    .banner-title {
+        padding: 10% 5%; /* Redefinindo o padding */
+        flex-direction: column; /* Colocando os elementos do banner em coluna */
+        text-align: center; /* Alinhando o texto do banner ao centro */
+    }
+
+    .banner-content-title {
+        padding: 5% 0; /* Redefinindo o padding */
+    }
+
+    .banner-content-title h1 {
+        font-size: 24px; /* Reduzindo o tamanho do título */
+    }
+
+    .banner-content-title p {
+        font-size: 14px; /* Reduzindo o tamanho do texto */
+    }
+
+    .banner-sobre {
+        padding: 10% 5%; /* Redefinindo o padding */
+        flex-direction: column; /* Colocando os elementos do banner em coluna */
+        text-align: center; /* Alinhando o texto do banner ao centro */
+    }
+
+    .banner-content-sobre {
+        padding: 5% 0; /* Redefinindo o padding */
+    }
+
+    .banner-content-sobre h1 {
+        font-size: 24px; /* Reduzindo o tamanho do título */
+    }
+
+    .banner-content-sobre p {
+        font-size: 14px; /* Reduzindo o tamanho do texto */
+    }
+
     .banner, .banner-2, .banner-3{
         padding: 10% 5%; /* Redefinindo o padding */
         flex-direction: column; /* Colocando os elementos do banner em coluna */
@@ -268,8 +377,23 @@ nav a:hover {
     }
 
     .img-banner, .img-banner-2, .img-banner-3{
-        max-width: 100%; /* Tornando a imagem do banner responsiva */
+        max-width: 100%;
         margin: 20px auto; /* Centralizando a imagem */
+    }
+
+    .img-banner img {
+        max-width: 100%; 
+        max-height: 100%;
+    }
+
+    .img-banner-2 img {
+        width: 200%;
+        height: 100%;
+    }
+
+    .img-banner-3 img {
+        max-width: 100%; 
+        max-height: 100%;
     }
 
     .banner-content, .banner-content-2, .banner-content-3 {
