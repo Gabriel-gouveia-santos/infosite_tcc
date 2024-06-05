@@ -211,6 +211,20 @@ div.col-md-4 {
     border: none;
 }
 
+.colaborators-cards .card-subtitle {
+    color: #a8a6a6;
+    margin-bottom: 5%;
+}
+
+.ver-mais {
+    display: none; /* Inicialmente oculto */
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
 /* Estilos para o footer */
 .footer-bg {
     background-color: #2A66DA;
