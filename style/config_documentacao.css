@@ -427,6 +427,10 @@ nav a:hover {
 /* Adicionando regra de mídia para telas maiores que 767px */
 @media (min-width: 768px) {
 
+    .logo {
+        width: 10%;
+    }
+
     .banner-content h2 {
         font-size: 25pt; /* Redefinindo o tamanho do título */
     }
