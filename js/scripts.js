@@ -14,14 +14,16 @@ verMaisTargets.forEach((target, index) => {
     button.style.display = 'block';
     button.textContent = 'Ver mais'; 
 
-    button.addEventListener('click', (event) => { // Added event parameter
-      event.preventDefault(); // Prevent default link behavior
-      target.style.WebkitLineClamp = null;
-      button.textContent = 'Ver menos'; 
-      button.addEventListener('click', () => {
+    button.addEventListener('click', (event) => {
+      event.preventDefault();
+
+      if (target.style.WebkitLineClamp === '2') { // Check if it's collapsed
+        target.style.WebkitLineClamp = null;
+        button.textContent = 'Ver menos'; 
+      } else { // Otherwise, it's expanded
         target.style.WebkitLineClamp = 2;
         button.textContent = 'Ver mais'; 
-      });
+      }
     });
   } else {
     button.style.display = 'none';
