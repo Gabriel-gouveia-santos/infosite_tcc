@@ -49,7 +49,6 @@ nav a:hover {
 /* Estilos adicionais para o conteúdo principal */
 .main-content {
     flex: 1; /* Flexível para ocupar o espaço restante */
-    margin-bottom: 15%; /* Para compensar a altura do footer fixo */
 }
 
 /* CSS para remover o padding */
@@ -236,20 +235,40 @@ div.col-md-4 {
 }
 
 .banner-3 {
-    padding: 0 11% 14% 0; /* Aumentando o padding para aumentar o espaço ao redor do banner */
-    text-align: left;
+    background-color: #1e1e1e;
+    padding: 0 11% 10% 11%; /* Aumentando o padding para aumentar o espaço ao redor do banner */
     display: flex; /* Adicionando display flex para alinhar a imagem e o conteúdo lado a lado */
-    justify-content: space-between; /* Distribuindo o espaço entre a imagem e o conteúdo */
+    align-items: center;
+}
+
+.banner-3 .img-banner-3 .card-img-top img{
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    overflow: hidden;
+    float: left;
+    margin-top: 30%;
 }
 
 .banner-3 .banner-content-3 {
     flex: 1;
+    margin-left: 10%;
+    margin-top: 5%;
 }
 
-.banner-3 .img-banner-3 {
-    max-width: 33%; /* Defina a largura máxima da div de imagem */
-    float: left; /* Alinhe a div de imagem à esquerda */
-    margin-left: 8%; /* Adicione uma margem à direita para separar a imagem do texto */
+.banner-3 .banner-content-3 .top .card-subtitle{
+    margin-top: 2%;
+    color: #a8a6a6;
+    float: left;
+}
+
+.banner-3 .banner-content-3 .top .img-avaliacao {
+    text-align: right;
+    width: 100%;
+}
+
+.img-avaliacao img {
+    margin-bottom: 5%;
 }
 
 .img-banner-3 img {
@@ -258,16 +277,15 @@ div.col-md-4 {
 }
 
 .title-banner-3 {
-    text-align: left;
-    color: #000;
+    color: #fff;
     font-weight: 500;
-    font-size: 25pt;
-    padding: 3% 0;
+    float: left;
 }
 
 .effect-text-3 {
     text-align: justify;
     font-size: 16pt;
+    color: #cdcdcd;
 }
 
 /* Estilos para o footer */
@@ -417,6 +435,11 @@ div.col-md-4 {
 
     .banner-content-2 p {
         font-size: 14px; /* Reduzindo o tamanho do texto */
+    }
+
+    .banner-3 {
+        flex-direction: column;
+        align-items: center;
     }
 
     .why-cards {
